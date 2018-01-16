@@ -1,5 +1,5 @@
 .PHONY: package deploy
-DOCKER_IMAGE=gcr.io/instruqt/shell-jenkins
+DOCKER_IMAGE=gcr.io/instruqt/jenkins
 GIT_COMMITS=$(shell git rev-list --count HEAD)
 GIT_HASH=$(shell git rev-parse --short HEAD)
 VERSION=$(GIT_COMMITS)-$(GIT_HASH)
